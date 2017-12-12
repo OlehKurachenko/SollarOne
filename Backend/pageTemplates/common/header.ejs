@@ -2,20 +2,12 @@
     <meta charset="UTF-8">
     <title>
         <% pageTitle %>
-        -- SolarOne boards</title>
+        -- SollarOne boards</title>
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/common.less"/>
-    <!--Файл LESS для лендинга-->
-    <% if(landing) { %>
-    <link rel="stylesheet/less" type="text/css" href="asstets/less/landing.less">
-    <% } else { %>
-    <!--Файл LESS для конструктора-->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/constructor">
-    <% } %>
-    <!-- LESS JavaScript компілятор -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <% cssFiles.forEach(function (value) { %>
+    <link rel="stylesheet/css" type="text/css" href="assets/css/<%= value %>"/>
+    <% }) %>
 </head>
 
 <body>
