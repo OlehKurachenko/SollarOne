@@ -18,6 +18,10 @@ module.exports = function (grunt) {
             constructor: {
                 src: 'Frontend/src/constructor.js',
                 dest: 'Frontend/www/assets/js/constructor.js'
+            },
+            completes: {
+                src: 'Frontend/src/completes.js',
+                dest: 'Frontend/www/assets/js/completes.js'
             }
         },
         less: {
@@ -62,6 +66,7 @@ module.exports = function (grunt) {
         [
             //'browserify:landing',
             //'browserify:constructor',
+            'browserify:completes',
             'less'
         ]
     );
