@@ -1,0 +1,21 @@
+<%- include('common/header', {pageTitle: "Готові дошки",cssFiles: ['common.css', 'completes.css']}) %>
+
+<div class="container">
+    <h3>Готові дошки</h3>
+    <div class="row">
+        <div class="coll-md-push-7 col-sm-7 col-md-8 col-lg-9">
+            <h5>
+                Наша команда зібрала для вас готові дошки, які ми вважаємо найбільш вдалими. Ми
+                ретельно тестували їх, для того щоб пересвідчитися що вони найкраще підходять для
+                обраних стилів катання.
+            </h5>
+            <div id="completes-list" class="row">
+                <%- include('completesList_oneItem') %>
+            </div>
+        </div>
+        <div class="coll-md-pull-5 col-sm-5 col-md-4 col-lg-3" style="background-color: red">
+        </div>
+    </div>
+</div>
+
+<%- include('common/footer') %>
