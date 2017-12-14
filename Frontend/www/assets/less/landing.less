@@ -1,11 +1,25 @@
-.descriptionPanel {
-  margin-top: 2%;
-  left: -200%;
-  background-color: white;
-  box-shadow: 0 2px 3px 0.5px lightgrey;
+@landingBoardBlockHeight: 500px;
+@linkColour: #63676c;
+body {
+  font-family: "Arial";
+}
 
-  .left, .right {
+.landingPageContent {
+  padding: 1%;
+  height: @landingBoardBlockHeight;
 
+  .landingPageBoard {
+    padding: 5%;
+    padding-left: 2%;
+  }
+
+  .bottomButtonRow, .topButtonRow {
+    color: @linkColour;
+    text-decoration: none;
+  }
+
+  .topButtonRow:hover, .bottomButtonRow:hover {
+    text-decoration: underline @linkColour;
   }
 }
 
