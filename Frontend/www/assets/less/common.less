@@ -1,32 +1,25 @@
 @headerHeight: 120px;
 @headerBackground: #fffa85;
 
-.pizdalysaa {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 40px;
-  padding: 5px;
-  color: darkgray;
-  display: inline-block;
-  box-sizing: border-box;
-}
-
-.pizdalysaa:hover {
-  border-radius: 5px;
-  border: 1px solid gray;
-}
 
 footer {
   width: 100%;
   text-align: center;
   color: darkgray;
+  //position: absolute;
+  //bottom: 0;
+  //left: 0;
+  //right: 0;
+  //margin: auto;
+  height: 10px;
+  border-top: 0.3px solid lightgrey;
 }
 
 .header {
   height: @headerHeight;
   position: relative;
   box-shadow: 0 2px 3px 0.5px lightgrey;
-
+  z-index: 3;
   .logo {
     height: @headerHeight;
   }

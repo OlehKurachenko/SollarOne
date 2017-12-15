@@ -22,7 +22,10 @@ function configureEndpoints(app) {
 
     app.get('/longboards', pages.completes);
 
+    app.get('/', pages.landing);
+    app.get('/order', pages.order);
     app.get('/api/getCompletesList', data.getCompletesList);
+
 
     //Якщо не підійшов жоден url, тоді повертаємо файли з папки www
     app.use(express.static(path.join(__dirname, '../Frontend/www')));
