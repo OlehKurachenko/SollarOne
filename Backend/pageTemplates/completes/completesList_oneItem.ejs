@@ -1,24 +1,24 @@
 <div class="col-md-6 col-lg-4 complete-card">
     <div class="thumbnail">
-        <img src="assets/images/completes/complete_1.jpg">
+        <img src="<%= picture %>">
         <div class="info">
             <h4><%= name %></h4>
             <h4>
-                <small>Стиль: Фрілайд, Даунхілл</small>
+                <small>Стиль: <%= styles %></small>
             </h4>
             <h4>
-                <small>Довжина: 92 см</small>
+                <small>Довжина: <%= length %> см</small>
             </h4>
             <h4>
-                <small>Гнучкість: жорстка</small>
+                <small>Гнучкість: <%= flex %></small>
             </h4>
             <h4>
-                <small>Підвіски: Paris v2 180mm</small>
+                <small>Підвіски: <%= trucks_ln %>mm</small>
             </h4>
             <h4>
-                <small>Колеса: Hawgs Fattie 70mm</small>
+                <small>Колеса: <%= wheels_ln %>mm</small>
             </h4>
-            <h4>Ціна: 3500грн</h4>
+            <h4>Ціна: <%= price %>грн</h4>
         </div>
     </div>
 </div>
