@@ -26,6 +26,11 @@ function configureEndpoints(app) {
 
     app.get('/order', pages.order);
 
+    app.post('/order', function (data) {
+        console.log("Order received");
+        console.log(data);
+    });
+
     app.get('/api/getCompletesList', data.getCompletesList);
 
 
