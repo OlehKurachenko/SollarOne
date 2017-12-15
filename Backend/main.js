@@ -23,7 +23,9 @@ function configureEndpoints(app) {
     app.get('/longboards', pages.completes);
 
     app.get('/', pages.landing);
+
     app.get('/order', pages.order);
+
     app.get('/api/getCompletesList', data.getCompletesList);
 
 
