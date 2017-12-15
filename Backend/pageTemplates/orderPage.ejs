@@ -1,0 +1,22 @@
+<% include("common/header.ejs", {pageTitle: "Замовлення", cssFiles: ['common.css', 'orderPage.css']}) %>
+<div class="row formBlock">
+    <div class="container col-xs-10 col-xs-offset-2">
+        <div class="form-horizontal">
+            <div class="form-group row">
+                <label class="col-sm-2">Як тебе звати?</label>
+                <input type="text" placeholder="Твоє ім'я">
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2">Як до тебе додзвонитися?</label>
+                <input type="text" placeholder="Телефон у форматі +380">
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2">Де тебе завжди можна знайти, щоб покататися разом?</label>
+                <input type="text" placeholder="Домашня адреса та дівоче прізвище твоєї матері(жарт)">
+            </div>
+        </div>
+    </div>
+    <div class="container btn btn-primary col-xs-6 col-xs-offset-3">Приєднуйся!</div>
+</div>
+
+<% include common/footer.ejs %>

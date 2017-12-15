@@ -31,7 +31,8 @@ module.exports = function (grunt) {
                     "Frontend/www/assets/css/common.css": "Frontend/www/assets/less/common.less",
                     "Frontend/www/assets/css/landing.css": "Frontend/www/assets/less/landing.less",
                     "Frontend/www/assets/css/constructor.css": "Frontend/www/assets/less/constructor.less",
-                    "Frontend/www/assets/css/completes.css": "Frontend/www/assets/less/completes.less"
+                    "Frontend/www/assets/css/completes.css": "Frontend/www/assets/less/completes.less",
+                    "Frontend/www/assets/css/orderPage.css": "Frontend/www/assets/less/orderPage.less"
                 }
             }
         }
