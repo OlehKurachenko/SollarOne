@@ -22,6 +22,10 @@ module.exports = function (grunt) {
             completes: {
                 src: 'Frontend/src/completes.js',
                 dest: 'Frontend/www/assets/js/completes.js'
+            },
+            orderPage: {
+                src: 'Frontend/src/orderPage.js',
+                dest: 'Frontend/www/assets/js/orderPage.js'
             }
         },
         less: {
