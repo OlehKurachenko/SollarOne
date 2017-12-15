@@ -69,9 +69,10 @@ module.exports = function (grunt) {
     // TODO configure below
     grunt.registerTask('default',
         [
-            //'browserify:landing',
+            'browserify:landing',
             //'browserify:constructor',
             'browserify:completes',
+            'browserify:orderPage',
             'less'
         ]
     );

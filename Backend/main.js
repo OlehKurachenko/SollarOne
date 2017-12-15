@@ -8,17 +8,6 @@ function configureEndpoints(app) {
     var data = require('./data');
     var api = require('./api');
 
-    //Налаштування URL за якими буде відповідати сервер
-    //Отримання списку піц
-    //app.get('/api/get-pizza-list/', api.getPizzaList);
-    //app.post('/orderpost', api.createOrder);
-
-    //Сторінки
-    //Головна сторінка
-    //app.get('/', pages.mainPage);
-
-    //Сторінка замовлення
-    //app.get('/order', pages.orderPage);
 
     app.get('/longboards', pages.completes);
 
@@ -28,7 +17,7 @@ function configureEndpoints(app) {
 
     app.post('/order', function (data) {
         console.log("Order received");
-        console.log(data);
+        console.log(data.body);
     });
 
     app.get('/api/getCompletesList', data.getCompletesList);

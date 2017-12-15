@@ -1,15 +1,51 @@
+var AJAX = require('./ajax');
+
+
 $('#nameInput').change(function () {
-    if (ValidName()) {
+    if (validName($('#nameInput').val())) {
+
         $('#nameInput').addClass("validInput");
         $('#nameInput').removeClass("invalidInput");
+    } else {
+        $('#nameInput').addClass("invalidInput");
+        $('#nameInput').removeClass("validInput");
+        $('#labelNameInput').addClass("invalidInput");
+        $('#labelNameInput').removeClass("validInput");
     }
 });
 
 $('#cellInput').change(function () {
-    if (validPhoneNumber()) {
+    if (validPhoneNumber($('#cellInput').val())) {
+
         $('#cellInput').addClass("validInput");
         $('#cellInput').removeClass("invalidInput");
+        $('#labelCellInput').addClass("validInput");
+        $('#labelCellInput').removeClass("invalidInput");
+    } else {
+        $('#cellInput').addClass("invalidInput");
+        $('#cellInput').removeClass("validInput");
+        $('#labelCellInput').addClass("invalidInput");
+        $('#labelCellInput').removeClass("validInput")
     }
+});
+
+
+$('#post').click(function () {
+
+    var name = $('#nameInput').val();
+    var cell = $('#cellInput').val();
+    var addr = $('#addressInput').val();
+    if (!validPhoneNumber(cell) || !validName(name))
+        return;
+    var order = {
+        name: name,
+        phoneNumber: cell,
+        address: addr
+    };
+
+    AJAX.post("order", order, function (err, data) {
+
+    });
 });
 
 function isLetterOrSpace(ch) {
