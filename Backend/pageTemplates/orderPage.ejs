@@ -1,22 +1,21 @@
-<% include("common/header.ejs", {pageTitle: "Замовлення", cssFiles: ['common.css', 'orderPage.css']}) %>
+<%- include("common/header", {pageTitle: "Замовлення",cssFiles: ["common.css", "orderPage.css"]}) %>
 <div class="row formBlock">
     <div class="container col-xs-10 col-xs-offset-2">
         <div class="form-horizontal">
             <div class="form-group row">
-                <label class="col-sm-2">Як тебе звати?</label>
-                <input type="text" placeholder="Твоє ім'я">
+                <label class="col-sm-2">Ім'я</label>
+                <input type="text" placeholder="Твоє ім'я" id="nameInput">
             </div>
             <div class="form-group row">
-                <label class="col-sm-2">Як до тебе додзвонитися?</label>
-                <input type="text" placeholder="Телефон у форматі +380">
+                <label class="col-sm-2">Телефон</label>
+                <input type="text" placeholder="Телефон у форматі +380" id="cellInput">
             </div>
             <div class="form-group row">
-                <label class="col-sm-2">Де тебе завжди можна знайти, щоб покататися разом?</label>
-                <input type="text" placeholder="Домашня адреса та дівоче прізвище твоєї матері(жарт)">
+                <label class="col-sm-2">Адреса</label>
+                <input type="text" placeholder="Адреса" id="addressInput">
             </div>
         </div>
     </div>
     <div class="container btn btn-primary col-xs-6 col-xs-offset-3">Приєднуйся!</div>
 </div>
-
-<% include common/footer.ejs %>
+<%- include("common/footer", {jsFiles: ["orderPage"]}) %>
